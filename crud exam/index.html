@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Shark Tank India</title>
+
+
+    <style>
+      input 
+      {
+        padding:  10px 20px;
+        margin: 10px;
+        font-weight: bold;
+        border: 2px  solid black;
+      }
+      div#sidebar-one {
+    display: flex;
+}
+    </style>
+  </head>
+
+  <body>
+ 
+    
+    <button   style="text-align: center; font-size: 40px; margin: auto; width: 100%;  background-color: whitesmoke; border: none; padding: 10px;">CRUD FORM</button>
+      <div class="my" style="display: flex;  width: 100%; margin: auto;">
+        <div class="container" style="width: 30%; margin-left: 20%;">
+          <div class="row">
+            <div class="column"></div>
+          </div>
+    
+          <div class="row">
+            <div class="columns four sidebar-one" id="sidebar-one">
+              <div class="add">
+              <h4>Add Pitch</h4>
+              <input
+                type="text"
+                id="pitch-title"
+                class="u-full-width"
+                placeholder="Title"
+              />
+              <input
+                type="text"
+                id="pitch-image"
+                class="u-full-width"
+                placeholder="Image Url" 
+              />
+              <input
+                type="text"
+                id="pitch-category"
+                class="u-full-width"
+                placeholder="Category"
+              />
+              
+              <input
+                type="number"
+                id="pitch-price"
+                class="u-full-width"
+                placeholder="Pitch Price"
+              />
+             
+              <button id="add-pitch" class="u-full-width button button-primary" style="display: flex; margin: 20px; padding: 10px 20px; background-color: black; color: white;">
+                Add Pitch
+              </button>
+            </div>
+              <hr />
+              <div class="edit">
+    
+              <h4>update all fields of Pitch</h4>
+              <input
+                type="text"
+                id="update-pitch-id"
+                class="u-full-width"
+                placeholder="ID"
+              />
+              <input
+                type="text"
+                id="update-pitch-title"
+                class="u-full-width"
+                placeholder="Title"
+              />
+              <input
+                type="text"
+                id="update-pitch-image"
+                class="u-full-width"
+                placeholder="Image Url"
+              />
+              <input
+                type="text"
+                id="update-pitch-category"
+                class="u-full-width"
+                placeholder="Category"
+              />
+            
+              <input
+                type="number"
+                id="update-pitch-price"
+                class="u-full-width"
+                placeholder="Pitch Price"
+              />
+           
+              <button id="update-pitch" class="u-full-width button button-primary" style="display: flex; margin: 20px; padding: 10px 20px; background-color: black; color: white;">
+                Update all fields
+              </button>
+
+             
+    
+             
+            </div>
+            </div>
+    
+            <div class="columns eight main">
+              <div class="search-pitch-wrapper" id="search-pitch-wrapper">
+             
+              
+              </div>
+            
+            </div>
+          </div>
+        </div>
+    
+    
+        <div  class="container2" style="width: 50%;  margin-left: 20%;">
+          <div class="data-list-wrapper" id="main-section">
+            <div class="card data-id="${id}">
+              <a href="desc.html?title=${encodeURIComponent(title)}&founder= ${encodeURIComponent(founder)}&category= ${encodeURIComponent(category)}&price= 
+              ${encodeURIComponent(price)}&image= ${encodeURIComponent(image)}" target="_blank">
+               <div class="card-img">
+                 <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg" alt="${title}" height="500px" width="400px">
+               </div>
+               </a>
+               <div class="card-body" style = " margin : 20px;">
+                 <div class="card-title">${title}</div>
+                 <div class="card-founder">${founder}</div>
+                 <div class="card-category">${category}</div>
+                 <div class="card-price">${price}</div>
+                 <a href="#" data-id="${id}" class="card-link"   style="font-weight: bold; text-decoration: none; color: black; font-weight: bold;">EDIT</a>
+                 <button data-id="${id}" class="card-button"  style="font-weight: bold; text-decoration: none; color: white; font-weight: bold; background-color: black;">DELETE</button>
+               </div>
+             </div>
+           
+            <div class="card-list">
+    
+              </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="main.js" type="module"></script>
+  </body>
+</html> 

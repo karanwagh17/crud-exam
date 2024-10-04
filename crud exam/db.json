@@ -1,0 +1,18 @@
+{
+  "pitches": [
+    {
+      "id": "129b",
+      "title": "fan",
+      "price": "567",
+      "category": "electronics",
+      "image": "https://3.imimg.com/data3/KT/HY/MY-7799592/table-fan.jpg"
+    },
+    {
+      "id": "5f3c",
+      "title": "phone",
+      "image": "https://inspireonline.in/cdn/shop/files/iPhone_15_Pink_PDP_Image_Position-1__en-IN.jpg?v=1694605206",
+      "category": "phone",
+      "price": "52000"
+    }
+  ]
+}
